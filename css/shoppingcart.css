@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; border: none;}
+a { text-decoration: none;}
+
+/*导航*/
+
+header { height: 60px; background: #000 url('../img/logo.png') 20px 50% no-repeat; line-height: -20px; position: relative; overflow: hidden;}
+header nav { float: left; margin-left: 200px; height: 60px; overflow: hidden; line-height: 60px;}
+header nav a { display: block; float: left; color: #fff; font-size: 16px; width: auto; height: 60px; padding: 0 25px; text-align: center; position: relative;}
+header nav a.hot { background: #363c41 url('../img/icon-new.png') 90% 25% no-repeat;}
+header nav a:hover { background-color: #363c41;}
+header div { float: right; position: relative; height: 60px; width: auto; overflow: hidden;}
+header div input.search { width: 150px; height: 40px; top: 50%; margin-top: -20px; display: block; background: transparent; float: left; position: relative; border-bottom: 1px solid #787d82; color: #fff;}
+header div input.sbm { width: 22px; height: 22px; display: block; background: url('../img/icon-1-sprite_w22.png') 0 0 no-repeat; float: left; margin-left: 5px; margin-top: 19px; margin-right: 25px; cursor: pointer;}
+header div div { width: 60px; height: 60px; float: left; position: relative; overflow: visible;}
+header div div:hover { background-color: #363c41;}
+header div div.cart::before { content: ""; height: 1px; width: 40px; display: block; background: #787d82; position: absolute; top: 50px; left: -52px;}
+header div div.cart a { width: 22px; height: 22px; display: block; background: url('../img/shopcar.png') 2px -210px no-repeat; margin: 19px auto;}
+header div div.reminder a { width: 22px; height: 22px; display: block; background: url('../img/icon-1-sprite_w22.png') 0 -44px no-repeat; margin: 19px auto;}
+header div div.head a { width: 40px; height: 40px; border-radius: 50%; display: block; overflow: hidden; background: url('../img/ava.jpg') no-repeat; background-size: 100%; margin: 10px auto;}
+
+/*banner区*/
+
+.banner { height: 160px; background: url('../img/cart-header-bg.jpg') repeat; position: relative;}
+h1 { width: 1000px; position: absolute; top: 40px; left: 0; right: 0; margin: auto; font-size: 24px; font-weight: normal;}
+
+/*主要内容区*/
+
+.main { width: 1000px; height: 600px; margin: 0 auto; position: relative;}
+.main table { border: 1px solid #ccc; box-shadow: 0 0 2px .8px rgba(0, 0, 0, .5); width: 1000px; position: absolute; top: -50px; border-collapse: collapse; /*去掉行间距*/ text-align: center;}
+.main table tr.title { height: 50px; background: #ddd;}
+.main table tr.title th:first-child { width: 60px;}
+.main table tr.title th:nth-child(2) { width: 350px; text-align: left; text-indent: 10px;}
+.main table tr.title th:nth-child(3),
+.main table tr.title th:nth-child(4),
+.main table tr.title th:nth-child(5) { width: 150px;}
+.main table tr { height: 120px;}
+.main table tr td { border-top: 1px solid #ddd;}
+.main table tr td:first-child { text-align: left; text-indent: 10px;}
+.main table tr td img { display: block; float: left;}
+.main table tr td p { float: left; margin-left: 10px;}
+.main table tr td input.plus,
+.main table tr td input.minus { width: 10px; height: 10px; border: 1px solid #ddd; font-size: 10px; background: transparent; line-height: 0;}
+.main table tr td input.num { width: 50px; height: 20px; border: 1px solid #ddd;}
+.main div.cal { height: 50px; width: 1000px; border: 1px solid #ddd; position: absolute; bottom: 50px; text-align: right;}
+.main div.cal div { float: right; height: 50px; width: auto;}
+.main div.cal div p:first-child { width: auto; height: 50px; line-height: 50px; float: left; margin-right: 10px;}
+.main div.cal div p:last-child { width: 120px; background: #f00; height: 50px; line-height: 50px; float: left; text-align: center; color: #fff;}
+.main div.cal div p span.ttlCal { color: #f00; font-size: 24px;}
+.main div.cal div p span.ttlCal b { font-weight: normal;}
+
+/*页脚*/
+
+footer { height: 80px; background: #000; color: #787d82; font-size: 12px; line-height: 100px;}
+footer div { height: 80px; width: 1000px; margin: 0 auto; position: relative;}
+footer div nav { width: 560px; height: 25px; position: absolute; top: 15px; left: 0; overflow: hidden;}
+footer div nav a { display: block; width: 70px; height: 25px; float: left; color: #959aa0; font-size: 12px; line-height: 25px;}
+footer div nav a:hover { color: #fff;}
+footer div.icon { float: right; height: 80px; width: auto;}
+footer div.icon a { float: left; display: block; width: 30px; height: 30px; border-radius: 50%; margin: 0 5px; margin-top: 22px;}
+footer div.icon a.WX { background: url('../img/footer-sprite.png') 0 -280px no-repeat; opacity: .5; position: relative;}
+footer div.icon a.WB { background: url('../img/footer-sprite.png') 0 -320px no-repeat; opacity: .5;}
+footer div.icon a.QQ { background: url('../img/footer-sprite.png') -1PX -365px no-repeat; opacity: .5;}
+footer div.icon a.WB:hover,
+footer div.icon a.QQ:hover { opacity: 1;}
+footer div.icon a.WX div.img { position: absolute; top: -220px; left: -70px; width: 170px; height: 215px; overflow: hidden; display: none;}
